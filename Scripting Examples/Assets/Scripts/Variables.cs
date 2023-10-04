@@ -12,16 +12,20 @@ public class Variables : MonoBehaviour
 
     // Private Gloabal/Member Variables
     private int _collectibleAmount = 0;
+    private float _horizontalInput = 0f;
+    private string _userName = "Jane Doe";
+    private bool _isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // maske sure Score variable = 0
+        Score = 0; // assignming a Global/Member variable
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // declare a local variable to track Start Position
     }
 }
