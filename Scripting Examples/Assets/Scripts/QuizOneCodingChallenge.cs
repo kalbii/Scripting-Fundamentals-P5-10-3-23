@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuizOnecodingChallenge : MonoBehaviour
+public class QuizOneCodingChallenge : MonoBehaviour
 {
-    private int _score = 0;
-    private float _Health = 100.0f;
+    public int _score = 0;
+    public float _health = 100.0f;
 
     // public float startDelay = 1.5f;
     // public float interval = 1.5f;
@@ -16,6 +16,7 @@ public class QuizOnecodingChallenge : MonoBehaviour
     {
         IncreaseScore();
         PrintPlayerName();
+        DecreaseHealth();
     }
 
     // Update is called once per frame
@@ -24,9 +25,9 @@ public class QuizOnecodingChallenge : MonoBehaviour
         
     }
 
-    private void IncreaseScore(int amount)
+    private void IncreaseScore()
     {
-        _score = amount + 10;
+        _score = _score + 10;
     }
 
     private void PrintPlayerName()
@@ -34,8 +35,8 @@ public class QuizOnecodingChallenge : MonoBehaviour
         Debug.Log(PlayerName);
     }
 
-    private void DecreaseHealth(float amount)
+    private void DecreaseHealth()
     {
-        _Health = amount - 20;
+        _health = _health - 20;
     }
 }
